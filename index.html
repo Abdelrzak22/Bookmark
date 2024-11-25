@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="pt-5 all">
+    <div class="container">
+      <h1 class="text-center">Bookmarker</h1>
+      <div class="dots"></div>
+      <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+         class="fa-solid fa-bookmark"></i></h2>
+    
+      <label for="one" class="text"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+     <input id='one' type="text" oninput=" nameVlid()" name="bookname" placeholder="Bookmark Name" class="form-control  input mb-4">
+     <label for="two" class="text"></i><i class="fa-solid fa-link"></i> site URL</label>
+     <input id='two' oninput="urlValid()" type="url" name="url" placeholder="Website URL" class="form-control  input">
+     <button class="btn btn-danger mt-4 text-center submit" id="addbtn">submit</button>
+ 
+    <div class="dot"></div>
+    <table class="table mt-4 text-center bg-light">
+      <thead>
+        <tr><th class="text-capitalize">Index</th>
+        <th class="text-capitalize">Website Name</th>
+        <th class="text-capitalize">Visit</th>
+        <th class="text-capitalize">Delete</th>
+      </tr></thead>
+      <tbody id="contant">
+        
+      </tbody>
+    </table>
+  </div>
+  </section>
+
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js.js"></script>
+</body>
+
+</html>

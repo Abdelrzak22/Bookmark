@@ -1,0 +1,119 @@
+.all{
+    min-height: 100vh;
+    background-color: #F7ECDE;
+    padding-bottom: 50px;
+    z-index: -5 !important;
+}
+.container h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(33, 37, 41);
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    margin: auto;
+}
+
+.container h1::before{
+    content: '';
+    width: 100%;
+    background-color: #FEC260;
+    height: 25%;
+    position: absolute;
+  
+    bottom: 5px;
+    left: 0%;
+    z-index: -1;
+    transition: all 350ms;
+    box-sizing: border-box;
+
+}
+
+.container h1:hover::before{
+    
+   height: 55%;
+}
+.dots{
+    padding: 50px 0 20px 0;
+    border-bottom-style: dotted;
+    border-color: #352e28;
+    border-width: 2px 0;
+}
+.dot{
+    padding: 10px 0 20px 0;
+    border-bottom-style: dotted;
+    border-color: #352e28;
+    border-width: 2px 0;
+}
+.container h2{
+    padding: 20px 0;
+    
+    background-image: linear-gradient(to right, #3ca55c, #3ca55c, #b5ac49,#b5ac49);
+    color: transparent;
+   font-family: "Righteous", serif;
+   font-size: 25px;
+    font-weight: 500;
+   background-clip: text;
+}
+.text{
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+    padding-bottom: 5px;
+}
+.submit{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 55px;
+}
+.visit{
+    background-color: #8A9E23 !important;
+    color: white !important;
+    border:0;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+.visit a{
+    text-decoration: none;
+    color: white;
+}
+.delete{
+    background-color: red !important;
+    color: white !important;
+    border:0;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
+a:active{
+    color: black;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #fec26055 !important;
+}
+table thead th{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+}
+table tbody th{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+}
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+}
