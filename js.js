@@ -64,7 +64,7 @@ function delet_details(index){
 
 
 function nameVlid(){
-    const regex=/^[a-z A-Z]{3,}$/
+    const regex=/^[a-z A-Z 0-9]{3,}$/
     if(regex.test(BookName.value))
     {
         BookName.classList.remove('is-invalid')
